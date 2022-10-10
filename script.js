@@ -18,7 +18,7 @@ input.addEventListener('input', () => {
 });
 
 imagem.addEventListener('input', () => {
-  leitorDeArquivos.readAsDataURL(input.files[0]);
+  leitorDeArquivos.readAsDataURL(imagem.files[0]);
   leitorDeArquivos.addEventListener('loadend', (event) => {
     img.src = event.target.result;
   });
