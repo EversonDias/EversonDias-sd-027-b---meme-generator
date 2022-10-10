@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,22 +8,46 @@
   <title>Gerador de meme</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <label for="text-input">Text do Meme:</label>
-  <input type="text" id="text-input">
+  <header class="containerHeader">
+    <h1>
+      Gerador de Meme
+    </h1>
+    <div class="inputsHeader">
+      <label for="text-input">Text do Meme:</label>
+      <input type="text" id="text-input" maxlength="60">
+    </div>
+    <div class="inputsHeader">
+      <label for="meme-insert">Foto:</label>
+      <input type="file" id="meme-insert">
+    </div>
+  </header>
 
-  <label for="meme-insert">Foto:</label>
-  <input type="file" id="meme-insert" maxlength="60">
-
-  <div class="container" id="meme-image-container">
-    <img class="backgroundOfContainer" id="img" src="#" alt="">
-    <p class="meme-text" id="meme-text"></p>
+  <div class="container-main">
+    <div class="container" name="container" id="meme-image-container">
+      <img class="backgroundOfContainer" id="meme-image" src="#" alt="">
+      <p class="meme-text" id="meme-text"></p>
+    </div>
   </div>
-  <button id="fire">Fire</button>
-  <button id="water">Water</button>
-  <button id="earth">Earth</button>
-  
-<script src="script.js"></script>
+
+  <div class="containerButton">
+    <button class="button" id="fire">Fire</button>
+    <button class="button" id="water">Water</button>
+    <button class="button" id="earth">Earth</button>
+  </div>
+
+
+  <div class="containerMemes">
+    <div class="styleMeme" id="meme-1"></div>
+    <div class="styleMeme" id="meme-2"></div>
+    <div class="styleMeme" id="meme-3"></div>
+    <div class="styleMeme" id="meme-4"></div>
+  </div>
+
+
+  <script src="script.js"></script>
 </body>
+
 </html>

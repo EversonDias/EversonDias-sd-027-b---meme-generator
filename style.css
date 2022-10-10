@@ -4,24 +4,102 @@
   box-sizing: border-box;
 }
 
+.containerHeader {
+  text-align: center;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 900;
+  font-family: sans-serif;
+  padding: 10px;
+}
+
+.inputsHeader {
+  padding: 10px;
+  font-size: 20px;
+
+}
+
+.container-main {
+  margin: 50px auto;
+  width: 300px;
+  height: 300px;
+}
+
 .container {
   display: flex;
-
-  background-color: rgb(254, 254, 254);
+  position: absolute;
+  background-color: white;
   border: solid 1px black;
   width: 300px;
   height: 300px;
 }
 
 .backgroundOfContainer {
-  position: relative;
-  overflow: hidden;
+  width: 100%;
 }
 
 .meme-text {
   position: absolute;
   font-size: 30px;
-  color: rgb(255, 255, 255);
+  color: white;
   font-weight: 900;
   text-shadow: 5px 5px 5px black;
+}
+
+.containerButton {
+  margin: 10px;
+  text-align: center;
+}
+
+.button {
+  padding: 10px;
+  color: white;
+  font-weight: 600;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+#fire {
+  background-color: red;
+}
+
+#water {
+  background-color: blue;
+}
+
+#earth {
+  background-color: green;
+}
+
+.styleMeme {
+  background-size: cover;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+#meme-1 {
+  background-image: url('./imgs/meme1.png');
+}
+
+#meme-2 {
+  background-image: url('./imgs/meme2.png');
+}
+
+#meme-3 {
+  background-image: url('./imgs/meme3.png');
+}
+
+#meme-4 {
+  background-image: url('./imgs/meme4.png');
+}
+
+.containerMemes {
+  display: flex;
+  justify-content: center;
 }
