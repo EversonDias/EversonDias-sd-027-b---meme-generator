@@ -24,7 +24,7 @@ O projeto "Meme Generator" permite que você:
 1. Clone o Projeto
 
 ```bash
-git clone MemeGenerator
+git clone https://github.com/EversonDias/Project_Trybe_HTML_CSS_and_JavaScript_Meme_Generator.git MemeGenerator
 ```
 
 2. Entre na pasta do projeto
